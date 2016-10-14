@@ -4,6 +4,8 @@
 
 This app was created using [the React tutorial](http://facebook.github.io/react/docs/tutorial.html) as a starting point.
 
+![Screenshot of the stock tracker app](/trackerWithDate.png)
+
 ## To use
 
 server.js serves static files from `public/` and handles requests to `/api/comments` to fetch or add data. Start a server with following:
