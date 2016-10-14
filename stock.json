@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1476465605225,
+        "name": "Mint Tea",
+        "description": "herbal, decaffeinated",
+        "price": "6",
+        "isTaxable": "yes",
+        "availableDate": "10/14/2016"
+    },
+    {
+        "id": 1476467259640,
+        "name": "Pearl Tea",
+        "description": "The best boba in the world",
+        "price": "5",
+        "isTaxable": "yes",
+        "availableDate": "10/14/2016"
+    }
+]
