@@ -4,7 +4,7 @@
 
 This app was created using [the React tutorial](http://facebook.github.io/react/docs/tutorial.html) as a starting point.
 
-![Screenshot of the stock tracker app](/trackerWithDate.png == 200x)
+![Screenshot of the stock tracker app](/trackerWithDate.png = 200x)
 
 ## To use
 
