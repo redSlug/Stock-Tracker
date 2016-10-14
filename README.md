@@ -4,8 +4,6 @@
 
 This app was created using [the React tutorial](http://facebook.github.io/react/docs/tutorial.html) as a starting point.
 
-![Screenshot of the stock tracker app](/trackerWithDate.png = 200x)
-
 ## To use
 
 server.js serves static files from `public/` and handles requests to `/api/comments` to fetch or add data. Start a server with following:
@@ -24,3 +22,6 @@ You can change the port number by setting the `$PORT` environment variable befor
 ```sh
 PORT=3001 node server.js
 ```
+
+## Screenshot
+![Screenshot of the stock tracker app](/trackerWithDate.png)
