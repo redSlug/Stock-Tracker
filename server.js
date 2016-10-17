@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
     // an API server in conjunction with something like webpack-dev-server.
     res.setHeader('Access-Control-Allow-Origin', '*');
 
-    // Disable caching so we'll always get the latest comments.
+    // Disable caching so we'll always get the latest items.
     res.setHeader('Cache-Control', 'no-cache');
     next();
 });
@@ -51,11 +51,11 @@ app.post('/api/stock', function(req, res) {
             console.error(err);
             process.exit(1);
         }
-        var comments = JSON.parse(data);
+        var items = JSON.parse(data);
         // NOTE: In a real implementation, we would likely rely on a database or
         // some other approach (e.g. UUIDs) to ensure a globally unique id. We'll
         // treat Date.now() as unique-enough for our purposes.
-        var newComment = {
+        var newItem = {
             id: Date.now(),
             name: req.body.name,
             description: req.body.description,
@@ -63,13 +63,13 @@ app.post('/api/stock', function(req, res) {
             isTaxable: req.body.isTaxable,
             availableDate: req.body.availableDate
         };
-        comments.push(newComment);
-        fs.writeFile(STOCK_DATA, JSON.stringify(comments, null, 4), function(err) {
+        items.push(newItem);
+        fs.writeFile(STOCK_DATA, JSON.stringify(items, null, 4), function(err) {
             if (err) {
                 console.error(err);
                 process.exit(1);
             }
-            res.json(comments);
+            res.json(items);
         });
     });
 });
